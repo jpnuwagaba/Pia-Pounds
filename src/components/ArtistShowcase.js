@@ -9,11 +9,18 @@ import Overview from '../components/Overview';
 
 const ArtistShowcase = () => {
   return (
-    <div className='artist-showcase'>
-      <div style={{ backgroundImage: `url(../img/pia3.jpg`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="artist-showcase-item artist-portrait"></div>
-      <div style={{ backgroundImage: `url(../img/pia.jpeg`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}  className="artist-showcase-item side-content side-content-1"></div>
-      <div style={{ backgroundImage: `url(../img/pia2.jpg`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}  className="artist-showcase-item side-content side-content-2"></div>
-    </div>
+    <>
+      <div style={{ backgroundImage: `url(../img/pia.jpeg`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+        <div className="container-80 artist-showcase">
+          <div className="showcase-text">
+            <h1>Tupaate EP</h1>
+            <p>Listen to Music by Pia Pounds</p>
+            <button className="btn btn-link"><a href="https://youtube.com/playlist?list=PLECDSciBcLjCoX436NiZyIDjfwJoHb3IJ" target={'_blank'}>Listen</a></button>
+          </div>
+        </div>
+        <div className="dark-overlay"></div>
+      </div>
+    </>
   )
 }
 

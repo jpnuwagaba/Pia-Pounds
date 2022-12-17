@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, ScrollRestoration } from "react-router-dom";
+import React from 'react'
 
 
 import Navbar from './components/Navbar';
