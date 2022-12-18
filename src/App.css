@@ -448,9 +448,18 @@ footer .social-els svg {
 }
 
 @media(max-width:900px){
-  /* .artist-showcase {
-    height: 70vh;
-  } */
+  .show-section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .show-section-grid-item-1 {
+    grid-column: 1 ;
+    grid-row: 1 ;
+  }
+    
+  .show-section-grid-item-5 {
+    grid-row: 5  ;
+  }
 
   .picture-showcase {
     grid-template-columns: 1fr;
@@ -464,5 +473,22 @@ footer .social-els svg {
 @media(max-width:500px) {
   .showcase-text h1 {
     font-size: 26px
+  }
+
+  .show-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .show-section-grid-item-1 {
+    grid-column: 1 ;
+    grid-row: 1 ;
+  }
+    
+  .show-section-grid-item-5 {
+    grid-row: 5;
+  }
+
+  .show-section-grid-item {
+    height: 300px;
   }
 }
